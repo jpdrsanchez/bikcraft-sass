@@ -1,0 +1,35 @@
+{
+  "name": "bikcraft",
+  "version": "1.0.0",
+  "description": "Inclusão do sass no prjeto bikcraft",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpdrsanchez/bikcraft-sass.git"
+  },
+  "keywords": [
+    "sass",
+    "html",
+    "bikcraft",
+    "css"
+  ],
+  "author": "João Pedro Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpdrsanchez/bikcraft-sass/issues"
+  },
+  "homepage": "https://github.com/jpdrsanchez/bikcraft-sass#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
