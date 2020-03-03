@@ -3,6 +3,7 @@ const { src, dest, watch, parallel, series } = require('gulp');
 
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const cmq = require('postcss-combine-media-query');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
@@ -13,6 +14,7 @@ function css() {
     .pipe(sass())
     .pipe(postcss([
       autoprefixer(),
+      cmq(),
       cssnano()
     ]))
     .pipe(sourcemaps.write('.'))
