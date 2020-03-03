@@ -12,9 +12,10 @@ function css() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
-      //cssnano() usar só ao final do curso
+      autoprefixer(),
+      cssnano()
     ]))
+    .pipe(sourcemaps.write('.'))
     .pipe(dest('./css'))
 }
 

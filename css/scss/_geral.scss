@@ -5,9 +5,7 @@ body {
 }
 
 p {
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 14px;
-	line-height: 20px;
+	@include tipo-2(14);
 }
 
 img {
@@ -20,10 +18,9 @@ img {
 }
 
 #form-erro span, #form-send span  {
-	font-size: 18px;
-	line-height: 25px;
 	margin-bottom: 10px;
 	display: block;
+	@include tipo-1(18);
 }
 
 #form-send {
@@ -35,36 +32,34 @@ img {
 }
 
 .btn {
-	border: 3px solid #fec63e;
+	border: 3px solid $amarelo;
 	padding: 10px 30px;
-	color: #fec63e;
-	font-size: 14px;
-	line-height: 20px;
+	color: $amarelo;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: .1em;
 	transition: all .5s ease;
+	@include tipo-1(14);
 }
 
 .btn:hover {
-	color: #fff;
-	border-color: #fff;
+	color: $white;
+	border-color: $white;
 }
 
 .btn.btn-preto:hover {
-	color: #000;
-	border-color: #000;
+	color: $black;
+	border-color: $black;
 }
 
 .subtitulo {
-	font-size: 24px;
-	line-height: 30px;
 	font-weight: bold;
 	letter-spacing: .1em;
-	color: #000;
+	color: $black;
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 40px;
+	@include tipo-1(24);
 }
 
 .subtitulo:after {
@@ -72,18 +67,17 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #000;
+	background: $black;
 	margin: 8px auto;
 }
 
 .subtitulo-interno {
-	font-size: 24px;
-	line-height: 30px;
 	font-weight: bold;
 	letter-spacing: .1em;
-	color: #000;
+	color: $black;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	@include tipo-1(24);
 }
 
 .subtitulo-interno:after {
@@ -91,7 +85,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #000;
+	background: $black;
 	margin: 8px 0;
 }
 
@@ -101,7 +95,7 @@ img {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background: #fec63e; /* Amarelo */
+	background: $amarelo; /* Amarelo */
 	padding: 15px 0;
 	z-index: 10;
 }
@@ -117,22 +111,21 @@ img {
 }
 
 .header_menu ul li a {
-	color: #000;
+	color: $black;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	font-size: 14px;
-	line-height: 20px;
 	padding: 10px 0;
 	transition: all .3s ease;
+	@include tipo-1(14);
 }
 
 .header_menu ul li a:hover {
-	color: #FFF;
+	color: $white;
 }
 
 .header_menu ul li a.menu_ativo {
-	color: #FFF;
+	color: $white;
 }
 
 /* Introdução */
@@ -148,17 +141,17 @@ img {
 }
 
 .introducao h1 {
-	font-size: 48px;
-	color: #FFF;
+	color: $white;
 	font-weight: bold;
 	text-transform: uppercase;
+	@include tipo-1(48);
 }
 
 .quote-externo {
 	max-width: 320px;
 	margin: 0 auto;
 	margin-bottom: 40px;
-	color: white;
+	color: $white;
 }
 
 .quote-externo p {
@@ -170,15 +163,15 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #fff;
+	background: $white;
 	margin: 14px auto 10px auto;
 }
 
 .quote-externo cite {
 	font-style: normal;
 	font-weight: bold;
-	font-size: 14px;
 	letter-spacing: .1em;
+	@include tipo-1(14);
 }
 
 /*Introducao Interna*/
@@ -188,14 +181,14 @@ img {
 	margin-top: 92px;
 	height: 160px;
 	text-align: center;
-	color: #fff;
+	color: $white;
 	padding-top: 30px;
 }
 
 .introducao-interna h1 {
-	font-size: 36px;
 	font-weight: bold;
 	text-transform: uppercase;
+	@include tipo-1(36);
 }
 
 .introducao-interna h1:after {
@@ -203,7 +196,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #fff;
+	background: $white;
 	margin: 6px auto 10px auto;
 }
 
@@ -215,7 +208,7 @@ img {
 }
 
 .produtos_lista li{
-	background: #fec63e;
+	background: $amarelo;
 	text-align: center;
 }
 
@@ -225,11 +218,10 @@ img {
 
 .produtos_lista li h3{
 	font-weight: bold;
-	font-size: 18px;
-	line-height: 25px;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	margin-top: 20px;
+	@include tipo-1(18);
 }
 
 .produtos_lista li h3:after{
@@ -237,7 +229,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #000;
+	background: $black;
 	margin: 2px auto;
 }
 
@@ -246,7 +238,7 @@ img {
 }
 
 .produtos_icone {
-	background: #000;
+	background: $black;
 	padding: 20px;
 }
 
@@ -264,16 +256,16 @@ img {
 
 .portfolio {
 	width: 100%;
-	background: #000;
+	background: $black;
 	padding: 40px 0;
 }
 
 .portfolio .subtitulo {
-	color: #fec63e;
+	color: $amarelo;
 }
 
 .portfolio .subtitulo:after {
-	background: #fec63e;
+	background: $amarelo;
 }
 
 .portfolio_lista div:last-of-type {
@@ -281,7 +273,7 @@ img {
 }
 
 .portfolio .call p {
-	color: #fff;
+	color: $white;
 }
 
 /*Qualidade*/
@@ -318,11 +310,10 @@ img {
 
 .qualidade_lista li h3{
 	font-weight: bold;
-	font-size: 18px;
-	line-height: 25px;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	margin-top: 20px;
+	@include tipo-1(18);
 }
 
 .qualidade_lista li h3:after{
@@ -330,7 +321,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #000;
+	background: $black;
 	margin: 6px auto;
 }
 
@@ -353,18 +344,17 @@ img {
 
 .footer {
 	width: 100%;
-	background: #000;
-	color: #fff;
+	background: $black;
+	color: $white;
 	padding: 20px 0;
 }
 
 .footer h3 {
-	font-size: 18px;
-	line-height: 25px;
-	color: #fec63e;
+	color: $amarelo;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	font-weight: bold;
+	@include tipo-1(18);
 }
 
 .footer h3:after {
@@ -372,7 +362,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #fec63e;
+	background: $amarelo;
 	margin: 6px 0 12px 0;
 }
 
@@ -381,9 +371,7 @@ img {
 }
 
 .footer_contato ul li {
-	font-size: 14px;
-	line-height: 20px;
-	font-family: Georgia, "Times New Roman", serif;
+	@include tipo-2(14);
 }
 
 .footer_redes ul li {
@@ -392,19 +380,19 @@ img {
 }
 
 .footer_redes ul li a {
-	border: 3px solid #fec63e;
+	border: 3px solid $amarelo;
 	display: block;
 	padding: 10px;
 	transition: all .5s ease;
 }
 
 .footer_redes ul li a:hover {
-	border-color: #fff;
+	border-color: $white;
 }
 
 .copy {
 	width: 100%;
-	background: #fec63e;
+	background: $amarelo;
 	padding: 20px 0;
 }
 

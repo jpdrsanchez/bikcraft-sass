@@ -13,7 +13,7 @@
 /*Footer*/
 
 .footer_redes ul li a {
-	border: 3px solid #fec63e;
+	border: 3px solid $amarelo;
 	display: block;
 	padding: 6px;
 
@@ -36,10 +36,9 @@
 }
 
 .produto_info p{
-	font-size: 14px;
-	line-height: 20px;
 	height: 122px;
 	padding: 20px 30px;
+	@include tipo-1(14);
 }
 
 .produto_info ul li {
@@ -71,24 +70,24 @@
 }
 
 .header_menu ul li a {
-	border: 4px solid #000;
+	border: 4px solid $black;
 	width: 136px;
 	display: block;
 	float: left;
 }
 
 .header_menu ul li a:hover {
-	border-color: #fff;
+	border-color: $white;
 }
 
 .header_menu ul li a.menu_ativo {
-	border-color: #fff;
+	border-color: $white;
 }
 
 /*Introducao*/
 
 .introducao h1 {
-	font-size: 36px;
+	@include tipo-1(36);
 }
 
 .introducao {
@@ -117,13 +116,12 @@
 /*Sobre*/
 
 .missao_sobre p {
-	font-size: 14px;
-	line-height: 20px;
 	padding-right: 0px;
+	@include tipo-1(14);
 }
 
 .missao_sobre ul li {
-	font-size: 14px;
+	@include tipo-1(14);
 	line-height: 25px;
 }
 
@@ -139,18 +137,16 @@
 }
 
 .produto_info p{
-	font-size: 14px;
-	line-height: 20px;
 	height: auto;
 	padding: 20px 30px;
+	@include tipo-1(14);
 }
 
 .produto_info ul li {
 	width: 149px;
 	height: 49px;
-	font-size: 14px;
-	line-height: 20px;
 	padding-top: 14px;
+	@include tipo-1(14);
 }
 
 .form {
